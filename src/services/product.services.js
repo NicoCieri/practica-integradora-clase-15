@@ -28,6 +28,11 @@ export const getById = async (id) => {
 
 export const create = async (product) => {
   try {
+    const products = await productDao.getAll();
+
+    if (products.find((p) => p.code === product.code))
+      throw new Error("Product already exists");
+
     const newProduct = await productDao.create(product);
     return newProduct || false;
   } catch (error) {

@@ -29,6 +29,9 @@ export const create = async (req, res, next) => {
     product.thumbnails = [req.file.filename];
     product.status = product.status ?? true;
     const newProduct = await service.create(product);
+
+    if (!newProduct) throw new Error("Product could not be created.");
+
     const products = await service.getAll();
 
     const io = req.app.get("io");
@@ -43,7 +46,9 @@ export const create = async (req, res, next) => {
 export const update = async (req, res, next) => {
   try {
     const { id } = req.params;
-    const uptatedProduct = await service.update(id, req.body);
+    const product = req.body;
+    product.thumbnails = [req.file.filename];
+    const uptatedProduct = await service.update(id, product);
     const products = await service.getAll();
 
     const io = req.app.get("io");
