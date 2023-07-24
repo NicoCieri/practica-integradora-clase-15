@@ -8,7 +8,6 @@ import productRouter from "./routes/product.routes.js";
 import cartRouter from "./routes/cart.routes.js";
 import viewsRouter from "./routes/views.routes.js";
 import messageRouter from "./routes/message.routes.js";
-
 import "./daos/mongodb/connection.js";
 
 const app = express();

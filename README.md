@@ -1,4 +1,4 @@
-# challenge-socket
+# Práctica Integradora Clase 15
 
 ## Comandos
 
