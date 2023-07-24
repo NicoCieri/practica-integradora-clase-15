@@ -1,5 +1,7 @@
 # Práctica Integradora Clase 15
 
+Para correr el proyecto es necesario crear el archivo `.env` y setear las credenciales de Mongo Atlas `DB_USER` y `DB_PASSWORD`.
+
 ## Comandos
 
 - `npm start`: Levanta el proyecto en el puerto 8080.
