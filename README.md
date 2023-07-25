@@ -9,9 +9,9 @@ Para correr el proyecto es necesario crear el archivo `.env` y setear las creden
 
 ## Rutas
 
-- [localhost:8080](localhost:8080): Listado de productos
-- [localhost:8080/realtimeproducts](localhost:8080/realtimeproducts): Listado de productos con Socket.io integrado
-- [localhost:8080/chat](localhost:8080/chat): Sala de chat con Socket.io integrado
+- [localhost:8080](http://localhost:8080): Listado de productos
+- [localhost:8080/realtimeproducts](http://localhost:8080/realtimeproducts): Listado de productos con Socket.io integrado
+- [localhost:8080/chat](http://localhost:8080/chat): Sala de chat con Socket.io integrado
 
 ## Endpoints
 
